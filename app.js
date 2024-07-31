@@ -13,10 +13,15 @@ const storage = multer.diskStorage({
 })
 const upload = multer({storage:storage})
 const connection = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "",
-database: "c237_cag"
+// host: "localhost",
+// user: "root",
+// password: "",
+// database: "c237_cag"
+
+host: "sql.freedb.tech",
+user: "freedb_WeiMing",
+password: "d3aG&P@m2wQ!qYn",
+database: "freedb_CAGGGG"
 })
 connection.connect((err) => {
 if (err) {
@@ -182,7 +187,7 @@ app.post("/editProduct/:id", upload.single("image"), (req, res) => {
         if (error)
         {
             console.error("Error updating product:", error)
-            req.status(500).send("Error updating product")
+            req.status(500).send("Error updating product.")
         }
         else
         {
