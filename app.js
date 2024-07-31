@@ -18,10 +18,10 @@ const connection = mysql.createConnection({
 // password: "",
 // database: "c237_cag"
 
-host: "sql.freedb.tech",
-user: "freedb_WeiMing",
-password: "d3aG&P@m2wQ!qYn",
-database: "freedb_CAGGGG"
+host: "db4free.net",
+user: "weiming",
+password: "testtest",
+database: "c237_cag23000077"
 })
 connection.connect((err) => {
 if (err) {
